@@ -10,3 +10,14 @@ body{
     padding:40px 0;
     margin:200px auto 0;
 }
+.Coronometr h1{
+    margin-top:60px;
+    font-size:70px;
+    font-weight:400;
+}
+.btns{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    space-gap:20px;
+}
