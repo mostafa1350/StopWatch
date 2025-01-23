@@ -1,3 +1,12 @@
 body{
-    background : #155fff
+    background : #155fff;
+}
+.Coronometr{
+    background:#fffaaa;
+    position:center;
+    text-align:center;
+    width:90%;
+    max-width:600px;
+    padding:40px 0;
+    margin:200px auto 0;
 }
