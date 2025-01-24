@@ -19,5 +19,17 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    space-gap:20px;
+    gap:25px;
+
+}
+#play ,#pause ,#reset{
+    border-width:2px;
+    border-color:#a56fff;
+    border-style:solid;
+    padding:3px;
+    border-radius:5px;
+    cursor: pointer;
+}
+#play:hover ,#pause:hover ,#reset:hover{
+    border-color:#a56111;
 }
