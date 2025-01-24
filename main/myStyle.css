@@ -31,5 +31,5 @@ body{
     cursor: pointer;
 }
 #play:hover ,#pause:hover ,#reset:hover{
-    border-color:#a56111;
+    border-color:#f95599;
 }
