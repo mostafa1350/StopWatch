@@ -1,5 +1,5 @@
 .Coronometr2{
-    background:#fffaaa;
+    background: #ffaaaa;
     position:center;
     text-align:center;
     width:90%;
@@ -17,6 +17,8 @@
     justify-content:center;
     gap:25px;
     margin-bottom:15px;
+    font-size:40px;
+    font-family:courier;
 }
 
 .btns2{
