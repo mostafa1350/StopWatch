@@ -25,6 +25,10 @@ const UpdateTime = ()=>{
     const curTime = Date.now();
     elapsTime = curTime - beginTime ; 
 
-    let hh = Math.floor(elapsTime / (1000*60*60));
-    
+    let hh = Math.floor(elapsTime / (1000 * 60 * 60));
+    let mm = Math.floor(elapsTime / (1000 * 60) %60);
+    let ss = Math.floor(elapsTime / (1000 % 60));
+    let mls = Math.floor(elapsTime / 1000 % 10);
+    ShowTimeClass2.textContent = "";
+
 }
