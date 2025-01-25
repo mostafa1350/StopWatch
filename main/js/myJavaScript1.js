@@ -5,11 +5,15 @@ let ShowTime_m = document.getElementById("ShowTime-m");
 let ShowTime_s = document.getElementById("ShowTime-s");
 let ShowTime_mls = document.getElementById("ShowTime-mls");
 let myCounter = null;
+let elapsTime = 0;
+let startTime = 0;
+let hundrth = 10420;
 // =================================
 
 function Coronometr() {
-    // ss++;
-    ms++;
+    ms +=parseInt(hundrth%100);
+    //ms++;
+    
     if (ms == 100) {
         ms = 0;
         ss++;
@@ -40,6 +44,10 @@ function Coronometr() {
 
 // ==================================
 function playFunc() {
+    const curTime = Date.now();
+    elapsTime = curTime - startTime;
+
+
     if (myCounter !== null) {
         clearInterval(myCounter);
     }
@@ -58,6 +66,5 @@ function resetFunc() {
     ShowTime_m.innerHTML = "00";
     ShowTime_s.innerHTML = "00";
     ShowTime_mls.innerHTML = "00";
-
 }
 

@@ -1,14 +1,14 @@
 body{
     background : #155fff;
 }
-.Coronometr{
+.Coronometr1{
     background:#fffaaa;
     position:center;
     text-align:center;
     width:90%;
     max-width:600px;
     padding:40px 0;
-    margin:200px auto 0;
+    margin:50px auto 0;
     border-radius : 50px;
     border-color: #ff8800;
     border-style: ridge ;
@@ -44,3 +44,4 @@ body{
 #play:hover ,#pause:hover ,#reset:hover{
     border-color:#f95599;
 }
+//=========================================

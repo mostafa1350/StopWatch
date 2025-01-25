@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="myStyle/myStyle1.css">
+    <link rel="stylesheet" href="myStyle/myStyle2.css">
     <link rel="icon" type="image/svg+xml" href="/icons-imgs/timeIcon.svg">
     <title>Stop-Watch</title>
 </head>
 <body>
-    <div class="Coronometr">
+    <div class="Coronometr1">
         <div class="ShowTimeClass">
             <h1 id="ShowTime-h">00</h1>
             <h1 id="ShowTime-col1">:</h1>
@@ -25,8 +26,26 @@
             <img id="reset" src="/icons-imgs/Reset.png" width="50px" height="50px" onclick="resetFunc()">
         </div>
     </div>
+    <div class="Coronometr2">
+        <div class="ShowTimeClass2">
+            <h1 id="ShowTime-h">00</h1>
+            <h1 id="ShowTime-col1">:</h1>
+            <h1 id="ShowTime-m">00</h1>
+            <h1 id="ShowTime-col2">:</h1>
+            <h1 id="ShowTime-s">00</h1>
+            <h1 id="ShowTime-col3">:</h1>
+            <h1 id="ShowTime-mls">00</h1>
+        </div>
 
-    <script src="js/myJavaScript.js"></script>
+        <div class="btns2">
+            <img id="pause2" src="/icons-imgs/Pause.png" width="50px" height="50px" onclick="pauseFunc2()">
+            <img id="play2" src="/icons-imgs/Play.png"  width="50px" height="50px"  onclick="playFunc2()">            
+            <img id="reset2" src="/icons-imgs/Reset.png" width="50px" height="50px" onclick="resetFunc2()">
+        </div>
+    </div>
+
+    <script src="js/myJavaScript1.js"></script>
+    <script src="js/myJavaScript2.js"></script>
     
 </body>
 </html>
