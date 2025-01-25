@@ -1,47 +1,63 @@
 
-let [ss,mm,hh] = [0,0,0];
-let ShowTime = document.getElementById("ShowTime");
+let [ms, ss, mm, hh] = [0, 0, 0, 0];
+let ShowTime_h = document.getElementById("ShowTime-h");
+let ShowTime_m = document.getElementById("ShowTime-m");
+let ShowTime_s = document.getElementById("ShowTime-s");
+let ShowTime_mls = document.getElementById("ShowTime-mls");
 let myCounter = null;
 // =================================
 
-function Coronometr(){
-    ss++;
-    if(ss==60){
-        ss=0;
-        mm++;
-        if(mm==60){
-            mm=0;
-            hh++
-            if(hh=24){
-                hh=0;
+function Coronometr() {
+    // ss++;
+    ms++;
+    if (ms == 100) {
+        ms = 0;
+        ss++;
+        if (ss == 60) {
+            ss = 0;
+            mm++;
+            if (mm == 60) {
+                mm = 0;
+                hh++
+                if (hh = 24) {
+                    hh = 0;
+                }
             }
         }
     }
-    let h = hh<10 ? "0" + hh : hh;
-    let m = mm<10 ? "0" + mm : mm;
-    let s = ss<10 ? "0" + ss : ss;
 
-    ShowTime.innerHTML = h + ":" + m + ":" + s ;
+    let h = hh < 10 ? "0" + hh : hh;
+    let m = mm < 10 ? "0" + mm : mm;
+    let s = ss < 10 ? "0" + ss : ss;
+    let mls = ms < 10 ? "0" + ms : ms;
+
+    ShowTime_h.innerHTML = h;
+    ShowTime_m.innerHTML = m;
+    ShowTime_s.innerHTML = s;
+    ShowTime_mls.innerHTML = mls;
 
 }
 
 // ==================================
-function playFunc(){
-    if(myCounter!== null){
+function playFunc() {
+    if (myCounter !== null) {
         clearInterval(myCounter);
     }
-    myCounter = setInterval(Coronometr,1000);
+    myCounter = setInterval(Coronometr, 10);
 }
 // ==================================
-function pauseFunc(){
+function pauseFunc() {
     clearInterval(myCounter);
 }
 // ==================================
 
-function resetFunc(){
+function resetFunc() {
     clearInterval(myCounter);
-    [ss,mm,hh] = [0,0,0];
-    ShowTime.innerHTML = "00:00:00";
+    [ms,ss, mm, hh] = [0, 0, 0 , 0];
+    ShowTime_h.innerHTML = "00";
+    ShowTime_m.innerHTML = "00";
+    ShowTime_s.innerHTML = "00";
+    ShowTime_mls.innerHTML = "00";
 
 }
 

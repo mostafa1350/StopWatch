@@ -14,11 +14,18 @@ body{
     border-style: ridge ;
     border-width: 5px;
 }
-.Coronometr h1{
+.ShowTimeClass{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:15px;
+}
+/* .Coronometr h1{
     margin-top:60px;
     font-size:70px;
     font-weight:400;
-}
+} */
 .btns{
     display:flex;
     align-items:center;
