@@ -1,31 +1,31 @@
 body{
     background : #155fff;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
 }
 .Coronometr1{
-    background:#fffaaa;
+    background: #fffaaa;
     position:center;
     text-align:center;
     width:90%;
     max-width:600px;
     padding:40px 0;
-    margin:50px auto 0;
+    margin:20px;
     border-radius : 50px;
     border-color: #ff8800;
     border-style: ridge ;
     border-width: 5px;
 }
+
 .ShowTimeClass{
     display:flex;
     align-items:center;
     justify-content:center;
     gap:25px;
-    margin-bottom:15px;
-}
-/* .Coronometr h1{
-    margin-top:60px;
-    font-size:70px;
-    font-weight:400;
-} */
+    margin-bottom:10px;
+    font-family:"Arial",monospace;
+    font-size:30px;}
 .btns{
     display:flex;
     align-items:center;
@@ -43,5 +43,8 @@ body{
 }
 #play:hover ,#pause:hover ,#reset:hover{
     border-color:#f95599;
+}
+#ShowTime-col{
+    color: #ff0000;
 }
 //=========================================
